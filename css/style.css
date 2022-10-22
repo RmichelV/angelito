@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    background-color: rgb(66, 230, 124);
+    
+}
+
+@media (min-width:360px){
+.container{
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+figure{
+    text-align: center;
+
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    text-align: center;
+}
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+  }
+  
+  @keyframes shadowPulse {
+    33% {
+      background: #FFF;
+      box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+    }
+    66% {
+      background: #FF3D00;
+      box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+    }
+    100% {
+      background: #FFF;
+      box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+    }
+  }
+
+}
